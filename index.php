@@ -23,7 +23,7 @@
                     <div class="col-6 mx-auto">
                         <div class="mb-3">
                             <label for="length" class="form-label">Quanti caratteri deve essere lunga la tua password</label>
-                            <input type="number" class="form-control" id="length" name="length" required>
+                            <input type="number" class="form-control" id="length" name="length" required min="3" max="20" placeholder="Inserisci un numero da 3 a 20...">
                         </div>
                     </div>
 
