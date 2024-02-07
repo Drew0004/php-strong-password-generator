@@ -32,15 +32,11 @@
                             Genera
                         </button>
                     </div>
-                    <div class="col-12 text-center my-3">
-                        
-                        <?php
-                            if(isset($_GET['length'])){
-                                echo '<h2>La tua password è: '.generateRandomPassword($_GET['length']).'</h2>'; 
-                            }
-                        ?>
-                       
-                    </div>
+                    <?php 
+                        if(isset($_GET['length'])){
+                            header('Location: ./partials/result.php');
+                        }
+                    ?>    
                 </form>
             </div>
         </div>

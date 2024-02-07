@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if(isset($_GET['length'])){
         function generateRandomPassword($length){
             //dichiaro una stringa di caratteri
@@ -17,5 +18,6 @@
             };
             return $password;
         }
+        $_SESSION['finalpassword'] = generateRandomPassword($_GET['length']);
     }
 ?>
