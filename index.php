@@ -1,24 +1,5 @@
 <?php
-
-    if(isset($_GET['length'])){
-        function generateRandomPassword($length){
-            //dichiaro una stringa di caratteri
-            $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!$%&?+-=><*';
-            // var_dump(strlen($alphabet));
-            $password = '';
-    
-            //ciclo per un tot di iterazioni 
-            for($i = 0; $i < $length; $i++){
-                //genero un numero random fino alla lunghezza del mio array
-                $n = rand(0, strlen($alphabet)-1);
-                //associo l'inidice dell'array ad un array di singoli caratteri
-                $singleType = $alphabet[$n];
-                // var_dump($singleType);
-                $password = $password.$singleType;
-            };
-            return $password;
-        }
-    }
+    require __DIR__ .'/partials/functions.php';
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +23,7 @@
                     <div class="col-6 mx-auto">
                         <div class="mb-3">
                             <label for="length" class="form-label">Quanti caratteri deve essere lunga la tua password</label>
-                            <input type="number" class="form-control" id="length" name="length">
+                            <input type="number" class="form-control" id="length" name="length" required>
                         </div>
                     </div>
 
@@ -56,7 +37,7 @@
                         <?php
                             if(isset($_GET['length'])){
                                 echo '<h2>La tua password è: '.generateRandomPassword($_GET['length']).'</h2>'; 
-                            } 
+                            }
                         ?>
                        
                     </div>
