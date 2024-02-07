@@ -24,7 +24,7 @@
                 ?>
             </h3>
             <div class="text-center">
-                <button class="btn btn-primary my-3">
+                <button class="btn btn-success my-3 rounded-5">
                     <a class="text-white text-decoration-none" href="./logout.php">Torna alla home</a>
                 </button>
             </div>

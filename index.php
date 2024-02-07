@@ -27,8 +27,44 @@
                         </div>
                     </div>
 
+                    <div class="col-6 d-flex justify-content-between mx-auto my-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="letters" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Solo Lettere
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="numbers" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Solo Numeri
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="specials" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Solo Caratteri speciali
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-around mx-auto my-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="repeat" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Ripeti caratteri
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="norepeat" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Non ripetere
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="col-12 text-center">
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary rounded-5">
                             Genera
                         </button>
                     </div>
