@@ -43,22 +43,13 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" name="specials" id="flexCheckChecked">
                             <label class="form-check-label" for="flexCheckChecked">
-                                Solo Caratteri speciali
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-6 d-flex justify-content-around mx-auto my-4">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="repeat" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Ripeti caratteri
+                                Solo Caratteri Speciali
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="norepeat" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Non ripetere
+                            <input class="form-check-input" type="checkbox" value="" name="norepeat" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Non Ripetere Caratteri
                             </label>
                         </div>
                     </div>
@@ -69,7 +60,7 @@
                         </button>
                     </div>
                     <?php 
-                        if(isset($_GET['length'])){
+                        if(isset($_GET['length']) && $_GET['length'] >= 3 && $_GET['length'] <= 20){
                             header('Location: ./partials/result.php');
                         }
                     ?>    
